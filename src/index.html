@@ -5,10 +5,32 @@
     <!-- PON UN FAVICON!!! -->
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>Ahorcado</title>
   </head>
   <body>
+    <body>
+      <div id="overlay">
+          <h1>Bienvenido al Juego del Ahorcado</h1>
+          <button id="start-button">Iniciar Juego</button>
+      </div>
+  
+      <div id="game-container">
+          <div id="attempts">
+              <span id="attempts-left"></span>
+          </div>
+          <div id="word"></div>
+          <div id="incorrect">Letras incorrectas: 
+              <span id="incorrect-letters"></span>
+          </div>
+          <div>
+              <input type="text" id="letter-input" maxlength="1" placeholder="Introduce una letra" onkeydown="guessLetter()">
+          </div>
+          <div>
+              <button id="guess-button">Adivinar</button>
+          </div>      
+          <div id="message"></div>
+          <button id="new-game-button" style="display: none;">Nueva Partida</button>
+      </div>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

@@ -2,6 +2,47 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #111;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  flex-direction: column;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column; 
+}
+#start-button, #new-game-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#game-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+#attempts-left{
+  font-size: 50px;
+}
+#word{
+  font-size: 70px;
+  text-transform: uppercase;
+}
+#new-game-button{
+  
+  display: none;
 }
